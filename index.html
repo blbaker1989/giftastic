@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy, Giphy</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="assets/images/giphy-left.gif">
+  <img id="topImageR" src="assets/images/giphy-right.gif">
+  <h1> I Love Animals!</h1>
+  <h4>Click to display GIPHYs of your favorite Animals!<br>Click the GIPHYs to pause and play :)<br>Search to add more buttons!</h4>
+</div>
+
+<form class="form-inline" id="animalSearch">
+  <div class="form-group">
+    <label for="animalInput">Search for an Animal</label>
+    <input type="text" id="animalInput">
+  </div>
+
+  <input id="addAnimal" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline">
+      <button class="btn btn-primary" id="animal" data-search="Cats">Cats</button>
+      <button class="btn btn-primary" id="animal" data-search="Dogs">Dogs</button>
+      <button class="btn btn-primary" id="animal" data-search="Snakes">Snakes</button>
+      <button class="btn btn-primary" id="animal" data-search="Elephants">Elephants</button>
+
+      <div id="myButtons"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="./giftastic.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
